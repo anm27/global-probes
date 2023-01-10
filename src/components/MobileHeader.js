@@ -40,7 +40,7 @@ const MobileHeader = () => {
               </header>
               <MdClose onClick={showMobileHeader} color="white" size={32} />
             </div>
-            <nav>
+            <nav className="pt-6">
               <ul className="grid items-center justify-center text-center text-2xl space-y-20">
                 <li>
                   <NavLink
