@@ -10,7 +10,7 @@ const HeroSection = () => {
     <div className="bg-sectionBgColor lg:space-x-6 md:flex md:flex-col-reverse md:text-start lg:flex lg:px-32 lg:py-14 items-center justify-between lg:h-650 tracking-widest">
       <div className="md:px-4 md:py-6">
         <div className="block space-y-6 lg:w-508 leading-loose">
-          <h1 className="font-bold  med:text-6xl md:text-3xl text-headingColor">
+          <h1 className="font-bold med:text-6xl md:text-3xl text-headingColor">
             Certified content writing service
           </h1>
           <p>

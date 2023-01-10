@@ -28,7 +28,7 @@ const MobileHeader = () => {
         </motion.div>
       )}
       {!showMobileNav && (
-        <div className="overflow-hidden overflow-y-auto">
+        <div className="fixed z-50 w-full">
           <motion.div className="bg-transparent h-100vh">
             <div className="smd:flex items-center lg:hidden xs:px-12 sm:px-8 py-4 justify-between">
               <header className="flex items-center flex-row space-x-7">

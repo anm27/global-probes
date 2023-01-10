@@ -5,14 +5,14 @@ const About = () => {
   //   const primaryColor = "#11cbd7";
 
   return (
-    <div className="lg:space-x-10 flex md:flex md:text-start md:flex-col-reverse lg:px-32 lg:py-14 items-center justify-between lg:h-510 tracking-widest">
+    <div className="lg:space-x-10 flex md:block md:text-start lg:px-32 lg:py-14 items-center justify-between lg:h-510 tracking-widest">
       <div className="relative lg:w-656">
         <img
           className="w-full lg:h-96 object-cover ml-auto mr-auto mt-4 mb-12 object-center"
           src={require("../images/about-banner.jpg")}
           alt="Hero Banner"
         />
-        <div className="absolute med:-bottom-6 med:right-32 md:bottom-6 md:left-2 shadow-md p-5 bg-white rounded-md w-64 items-center justify-center">
+        <div className="absolute med:-bottom-6 med:right-32 md:-bottom-10 md:left-2 shadow-md p-5 bg-white rounded-md w-64 items-center justify-center">
           <div className="flex items-center space-x-6">
             <AiFillStar size={64} color="gold" />
             <div className="block space-y-2">
