@@ -3,6 +3,8 @@ import { CgWebsite } from "react-icons/cg";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import { FaTshirt } from "react-icons/fa";
 import { MdSocialDistance } from "react-icons/md";
+import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 
 const Services = () => {
   const primaryColor = "#0279d0";
@@ -54,6 +56,12 @@ const Services = () => {
           <p>Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
         </div>
       </div>
+      <Link to="/services">
+        <div className="flex font-semibold items-center justify-center">
+          <h2 className="uppercase text-primaryColor">All services</h2>
+          <BsArrowRight className="pt-1" color="#0279d0" size={20} />
+        </div>
+      </Link>
     </div>
   );
 };
