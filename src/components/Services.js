@@ -5,7 +5,7 @@ import { FaTshirt } from "react-icons/fa";
 import { MdSocialDistance } from "react-icons/md";
 
 const Services = () => {
-  const primaryColor = "#11cbd7";
+  const primaryColor = "#0279d0";
   return (
     <div className="bg-sectionBgColor items-center justify-between tracking-widest lg:py-12 md:py-7">
       <h2 className="text-center pb-6 text-2xl text-gray-500 tracking-wider">

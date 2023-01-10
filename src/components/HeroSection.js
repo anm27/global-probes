@@ -4,7 +4,7 @@ import { HiOutlinePencil } from "react-icons/hi";
 import { TiTick } from "react-icons/ti";
 
 const HeroSection = () => {
-  const primaryColor = "#11cbd7";
+  const primaryColor = "#0279d0";
 
   return (
     <div className="bg-sectionBgColor lg:space-x-6 md:flex md:flex-col-reverse md:text-start lg:flex lg:px-32 lg:py-14 items-center justify-between lg:h-650 tracking-widest">

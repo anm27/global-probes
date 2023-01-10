@@ -7,7 +7,7 @@ import MobileHeader from "./MobileHeader";
 const Header = () => {
   const [showMobileNav] = useState("false");
 
-  const primaryColor = "#11cbd7";
+  //   const primaryColor = "#0279d0";
   //   const primaryColorDark = "#02c5d1";
 
   return (
@@ -16,23 +16,23 @@ const Header = () => {
       {showMobileNav && <MobileHeader />}
 
       {/* Header Large Screens */}
-      <div className="smd:hidden lg:flex justify-between items-center lg:px-32 sm:px-4 py-4 tracking-widest">
+      <div className="smd:hidden lg:flex bg-primaryColor justify-between items-center lg:px-32 sm:px-4 py-4 tracking-widest">
         <header className="flex items-center flex-row space-x-7">
           <img
             className="h-12"
-            src={require("../images/global-probes-logo.png")}
+            src={require("../images/logo-4.png")}
             alt="Logo"
           />
 
           <div className="flex ">
             <div className="flex items-center space-x-2 border-r-2 border-gray-200 pr-8">
-              <GoMail color={primaryColor} size={20} />
-              <h2 className="text-gray-500">SEND MESSAGE</h2>
+              <GoMail color="white" size={20} />
+              <h2 className="text-white">SEND MESSAGE</h2>
             </div>
 
             <div className="flex items-center space-x-2 pl-7">
-              <MdPhoneInTalk color={primaryColor} size={20} />
-              <h2 className="text-gray-500">+(12) 3456 7890</h2>
+              <MdPhoneInTalk color="white" size={20} />
+              <h2 className="text-white">+(12) 3456 7890</h2>
             </div>
           </div>
         </header>
@@ -41,7 +41,7 @@ const Header = () => {
             <li>
               <NavLink
                 to="/"
-                className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
+                className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 Home
               </NavLink>
@@ -49,7 +49,7 @@ const Header = () => {
             <li>
               <NavLink
                 to="/services"
-                className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
+                className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 Services
               </NavLink>
@@ -57,7 +57,7 @@ const Header = () => {
             <li>
               <NavLink
                 to="about"
-                className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
+                className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 About
               </NavLink>
@@ -65,7 +65,7 @@ const Header = () => {
             <li>
               <NavLink
                 to="contact"
-                className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
+                className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 Contact
               </NavLink>
@@ -73,7 +73,7 @@ const Header = () => {
             <li>
               <NavLink
                 href="blogs"
-                className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
+                className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 Blogs
               </NavLink>

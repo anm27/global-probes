@@ -7,7 +7,7 @@ import { TbGridDots } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const MobileHeader = () => {
-  const primaryColor = "#11cbd7";
+  const primaryColor = "#2ca5fe";
   const [showMobileNav, setShowMobileNav] = useState("false");
   let showMobileHeader = () => {
     setShowMobileNav((current) => !current);
@@ -16,15 +16,15 @@ const MobileHeader = () => {
   return (
     <>
       {showMobileNav && (
-        <motion.div className="smd:flex w-full bg-white items-center lg:hidden xs:px-12 sm:px-8 py-4 justify-between">
+        <motion.div className="smd:flex w-full bg-primaryColor items-center lg:hidden xs:px-12 sm:px-8 py-4 justify-between">
           <header className="items-center">
             <img
               className="h-12"
-              src={require("../images/global-probes-logo.png")}
+              src={require("../images/logo-4.png")}
               alt="Logo"
             />
           </header>
-          <TbGridDots onClick={showMobileHeader} size={32} />
+          <TbGridDots color="white" onClick={showMobileHeader} size={32} />
         </motion.div>
       )}
       {!showMobileNav && (
@@ -34,7 +34,7 @@ const MobileHeader = () => {
               <header className="flex items-center flex-row space-x-7">
                 <img
                   className="h-12"
-                  src={require("../images/global-probes-logo.png")}
+                  src={require("../images/logo-4.png")}
                   alt="Logo"
                 />
               </header>

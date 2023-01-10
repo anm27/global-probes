@@ -58,11 +58,15 @@ module.exports = {
       },
 
       colors: {
-        primaryColor: "#11cbd7",
-        primaryDark: "#02c5d1",
+        primaryColor: "#0279d0",
+        primaryDark: "#034a7f",
         sectionBgColor: "#DCD6D3",
         headingColor: "#1D2125",
         transparent: "#000",
+        demo1: "#11cbd7",
+        demo2: "#0bbcaa",
+        demo3: "#356e65",
+        demo4: "#253334",
       },
     },
   },
