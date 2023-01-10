@@ -28,7 +28,7 @@ const MobileHeader = () => {
         </motion.div>
       )}
       {!showMobileNav && (
-        <div className="fixed grid items-center z-50 w-full bg-transparent h-100vh">
+        <div className="fixed z-50 w-full bg-transparent h-100vh">
           <motion.div>
             <div className="smd:flex items-center lg:hidden xs:px-12 sm:px-8 justify-between pt-4">
               <header className="flex items-center flex-row space-x-7">
@@ -41,7 +41,7 @@ const MobileHeader = () => {
               <MdClose onClick={showMobileHeader} color="white" size={32} />
             </div>
             <nav>
-              <ul className="grid justify-center text-center text-2xl space-y-20">
+              <ul className="grid items-center justify-center text-center text-2xl space-y-20">
                 <li>
                   <NavLink
                     to="/"
