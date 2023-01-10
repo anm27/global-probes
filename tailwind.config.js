@@ -60,7 +60,7 @@ module.exports = {
       colors: {
         primaryColor: "#11cbd7",
         primaryDark: "#02c5d1",
-        sectionBgColor: "#F8F8F8",
+        sectionBgColor: "#DCD6D3",
         headingColor: "#1D2125",
         transparent: "#000",
       },

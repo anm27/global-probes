@@ -8,6 +8,9 @@ const Services = () => {
   const primaryColor = "#11cbd7";
   return (
     <div className="bg-sectionBgColor items-center justify-between tracking-widest lg:py-12 md:py-7">
+      <h2 className="text-center pb-6 text-2xl text-gray-500 tracking-wider">
+        Categories
+      </h2>
       <div className="text-center space-y-10">
         <h2 className="font-bold med:text-6xl md:text-3xl text-headingColor">
           Content Writing Services

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ImCancelCircle } from "react-icons/im";
+import { MdClose } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { GoMail } from "react-icons/go";
 import { MdPhoneInTalk } from "react-icons/md";
@@ -16,7 +16,7 @@ const MobileHeader = () => {
   return (
     <>
       {showMobileNav && (
-        <motion.div className="smd:flex w-full items-center lg:hidden xs:px-12 sm:px-8 py-4 justify-between">
+        <motion.div className="smd:flex w-full bg-white items-center lg:hidden xs:px-12 sm:px-8 py-4 justify-between">
           <header className="items-center">
             <img
               className="h-12"
@@ -28,9 +28,9 @@ const MobileHeader = () => {
         </motion.div>
       )}
       {!showMobileNav && (
-        <div className="fixed z-50 w-full">
-          <motion.div className="bg-transparent h-100vh">
-            <div className="smd:flex items-center lg:hidden xs:px-12 sm:px-8 py-4 justify-between">
+        <div className="fixed grid items-center z-50 w-full bg-transparent h-100vh">
+          <motion.div>
+            <div className="smd:flex items-center lg:hidden xs:px-12 sm:px-8 justify-between pt-4">
               <header className="flex items-center flex-row space-x-7">
                 <img
                   className="h-12"
@@ -38,14 +38,10 @@ const MobileHeader = () => {
                   alt="Logo"
                 />
               </header>
-              <ImCancelCircle
-                onClick={showMobileHeader}
-                color="white"
-                size={32}
-              />
+              <MdClose onClick={showMobileHeader} color="white" size={32} />
             </div>
             <nav>
-              <ul className="block items-center text-center text-2xl space-y-16">
+              <ul className="grid justify-center text-center text-2xl space-y-20">
                 <li>
                   <NavLink
                     to="/"

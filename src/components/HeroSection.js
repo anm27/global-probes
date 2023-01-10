@@ -17,9 +17,9 @@ const HeroSection = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar leo .
           </p>
-          <div className="xs:flex md:justify-center xs:space-x-4">
+          <div className="xs:flex smd:grid gap-4">
             <div className="flex items-center justify-center text-center space-x-2 mdm:px-9 sml:px-4 sml:text-xs py-3 bg-primaryColor text-white rounded-sm">
-              <button>OUR SERVICES</button>
+              <button className="text-base">OUR SERVICES</button>
               <BsArrowRight />
             </div>
             <div className="flex items-center justify-center space-x-2">
