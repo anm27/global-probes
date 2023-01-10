@@ -1,13 +1,15 @@
-import { Disclosure } from "@headlessui/react";
+// import { Disclosure } from "@headlessui/react";
 import React from "react";
-import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import Header from "../components/Header";
+// import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+// import Header from "../components/Header";
+import OrderProcess from "../components/OrderProcess";
 
 const Services = () => {
   return (
     <div>
-      <Header />
-      <Disclosure
+      {/* <Header /> */}
+      <OrderProcess />
+      {/* <Disclosure
         as="div"
         key="service"
         className="border-t border-gray-200 px-4 py-6"
@@ -44,7 +46,7 @@ const Services = () => {
             </Disclosure.Panel>
           </>
         )}
-      </Disclosure>
+      </Disclosure> */}
     </div>
   );
 };
