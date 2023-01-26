@@ -63,10 +63,14 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      108: "32rem",
     },
     extend: {
       backgroundImage: {
-        "fixed-image": "url('../src/images/fixed-banner.jpg')",
+        "fixed-image":
+          "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../src/images/fixed-banner.jpg')",
+        "text-bg": "url('../src/images/text-bg.png')",
+
         // 'footer-texture': "url('/img/footer-texture.png')",
       },
       width: {
@@ -103,11 +107,13 @@ module.exports = {
       },
 
       colors: {
-        primaryColor: "#0279d0",
+        primaryColor: "#253334",
         primaryDark: "#034a7f",
         sectionBgColor: "#DCD6D3",
-        headingColor: "#1D2125",
+        headingColor: "#4e6b6d",
+        headingBright: "#18ccd9",
         transparent: "#000",
+        lightColorPricing: "#6a7e80",
         demo1: "#11cbd7",
         demo2: "#0bbcaa",
         demo3: "#356e65",

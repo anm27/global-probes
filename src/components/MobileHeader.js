@@ -7,7 +7,7 @@ import { TbGridDots } from "react-icons/tb";
 import { motion } from "framer-motion";
 
 const MobileHeader = () => {
-  const primaryColor = "#2ca5fe";
+  // const primaryColor = "#253334";
   const [showMobileNav, setShowMobileNav] = useState("false");
   let showMobileHeader = () => {
     setShowMobileNav((current) => !current);
@@ -28,7 +28,7 @@ const MobileHeader = () => {
         </motion.div>
       )}
       {!showMobileNav && (
-        <div className="fixed z-50 w-full bg-transparent h-100vh">
+        <div className="fixed z-50 w-full bg-primaryColor h-100vh">
           <motion.div>
             <div className="smd:flex items-center lg:hidden xs:px-12 sm:px-8 justify-between pt-4">
               <header className="flex items-center flex-row space-x-7">
@@ -60,7 +60,7 @@ const MobileHeader = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="about"
+                    to="/about"
                     className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
                   >
                     About
@@ -68,7 +68,7 @@ const MobileHeader = () => {
                 </li>
                 <li>
                   <NavLink
-                    to="contact"
+                    to="/contact"
                     className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
                   >
                     Contact
@@ -76,7 +76,7 @@ const MobileHeader = () => {
                 </li>
                 <li>
                   <NavLink
-                    href="blogs"
+                    to="/blogs"
                     className="hover:text-primaryColor tracking-wider font-semibold hover:font-semibold text-gray-500"
                   >
                     Blogs
@@ -84,12 +84,12 @@ const MobileHeader = () => {
                 </li>
                 <div className="flex items-center justify-center pb-12 px-2">
                   <div className="flex items-center space-x-2 border-r-2 pr-8">
-                    <GoMail color={primaryColor} size={20} />
+                    <GoMail color="white" size={20} />
                     <h2 className="text-gray-500 md:text-xs">SEND MESSAGE</h2>
                   </div>
 
                   <div className="flex items-center space-x-2 pl-7">
-                    <MdPhoneInTalk color={primaryColor} size={20} />
+                    <MdPhoneInTalk color="white" size={20} />
                     <h2 className="text-gray-500 md:text-xs">
                       +(12) 3456 7890
                     </h2>

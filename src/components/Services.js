@@ -7,22 +7,21 @@ import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
 
 const Services = () => {
-  const primaryColor = "#0279d0";
+  const primaryColor = "#253334";
   return (
     <div className="bg-sectionBgColor items-center justify-between tracking-widest lg:py-12 md:py-7">
       <h2 className="text-center pb-6 text-2xl text-gray-500 tracking-wider">
         Categories
       </h2>
-      <div className="text-center space-y-10">
-        <h2 className="font-bold med:text-6xl md:text-3xl text-headingColor">
+      <div className="text-center w-full bg-text-bg bg-cover bg-center">
+        <h2 className="font-bold med:text-2xl md:text-xl md:p-4 med:p-4 text-headingColor">
           Content Writing Services
         </h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
       </div>
-
+      <p className="md:p-4 med:p-10">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
       <div className="lg:flex md:grid gap-10 my-10 justify-center">
         <div className="bg-white px-10 py-10 rounded-sm shadow-sm mx-4 space-y-4">
           <div className="flex items-center space-x-6">
@@ -59,7 +58,7 @@ const Services = () => {
       <Link to="/services">
         <div className="flex font-semibold items-center justify-center">
           <h2 className="uppercase text-primaryColor">All services</h2>
-          <BsArrowRight className="pt-1" color="#0279d0" size={20} />
+          <BsArrowRight className="pt-1" color={primaryColor} size={20} />
         </div>
       </Link>
     </div>

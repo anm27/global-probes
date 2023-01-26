@@ -56,7 +56,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="about"
+                to="/about"
                 className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 About
@@ -64,7 +64,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="contact"
+                to="/contact"
                 className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 Contact
@@ -72,7 +72,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                href="blogs"
+                to="/blogs"
                 className="hover:text-primaryDark tracking-wider font-semibold hover:font-semibold text-white"
               >
                 Blogs
