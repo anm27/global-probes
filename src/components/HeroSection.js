@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="xs:flex smd:grid gap-4 ">
               <Link to="/services">
                 <div className="flex items-center justify-center text-center space-x-2 mdm:px-9 sml:px-3 sml:text-base py-3 bg-primaryColor text-white rounded-sm">
-                  <button className="lg:text-base">OUR SERVICES</button>
+                  <button className="lg:text-sm">OUR SERVICES</button>
                   <BsArrowRight />
                 </div>
               </Link>
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 onClick={() => setShowModal(true)}
               >
                 <HiOutlinePencil size={24} />
-                <h2 className="lg:text-base">REQUEST A QUOTE</h2>
+                <h2 className="lg:text-sm">REQUEST A QUOTE</h2>
               </div>
             </div>
           </div>
